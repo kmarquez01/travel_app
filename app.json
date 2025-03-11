@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "tvshow_app",
+    "scheme": "tvshow_app",
     "slug": "tvshow_app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -15,13 +16,36 @@
       "supportsTablet": true
     },
     "android": {
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAroT3uGDrF7dOmFB-71LQiAfpx9MyyIYU"
+        }
+      },
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.anonymous.tvshow_app"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      
+      "expo-router",
+      [
+        "expo-calendar",
+        {
+          "calendarPermission": "The app needs to access your calendar."
+        }
+      ]
+    ],
+    "permissions":[
+      {
+        
+      }
+
+    ]
   }
 }
