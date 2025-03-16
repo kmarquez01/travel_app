@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "tvshow_app",
-    "scheme": "tvshow_app",
-    "slug": "tvshow_app",
+    "name": "Oterra",
+    "scheme": "Oterra",
+    "slug": "Oterra",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -25,7 +25,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.anonymous.tvshow_app"
+      "package": "com.anonymous.oterra"
     },
     "web": {
       "favicon": "./assets/favicon.png",
