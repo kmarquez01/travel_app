@@ -83,7 +83,7 @@ const Home = () => {
         {/* <View style = {styles.inner}> */}
         <Text className = "text-base text-gray-200 font-pmedium mb-5">Add event</Text>
         <TextInput
-                
+
                 onChangeText = {(e) => setForm( { ...form, task: e})}
                 value =  {form.task}
                 style = {styles.input}

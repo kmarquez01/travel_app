@@ -6,7 +6,7 @@ pluginManagement {
     }
 } 
 
-rootProject.name = 'tvshow_app'
+rootProject.name = 'Oterra'
 
 dependencyResolutionManagement {
   versionCatalogs {

@@ -21,22 +21,27 @@ const SignUp = () => {
 
   const [isSubmitting, setisSubmitting] = useState(false)
 
-  const register = async () => {
-    setisSubmitting(true)
-    try{
-      const response = await createUserWithEmailAndPassword(auth, form.email, form.password)
-      console.log(response)
-      updateProfile(auth.currentUser, {
-        displayName: form.username
-      })
-      alert("Check you email!");
-    } catch (error) {
-      console.log(error);
-      alert("Registration failed: " + error.message)
-    } finally {
-      setisSubmitting(false)
-    }
-  }
+ const register = async () => {
+   setisSubmitting(true);
+   try {
+     // Create user with email and password
+     const response = await createUserWithEmailAndPassword(auth, form.email, form.password);
+     console.log(response);
+
+     // Update user profile (this is async, so await it)
+     await updateProfile(auth.currentUser, {
+       displayName: form.username,
+     });
+
+     alert("Check your email for verification!");
+   } catch (error) {
+     console.log(error);
+     alert("Registration failed: " + error.message);
+   } finally {
+     setisSubmitting(false);
+   }
+ };
+
 
 
   return (

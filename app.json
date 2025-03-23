@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Oterra",
-    "scheme": "Oterra",
+    "scheme": "oterra",
     "slug": "Oterra",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -13,9 +13,15 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.oterra",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "We need your location for mapping features.",
+        "MGLMapboxAccessToken": "YOUR_MAPBOX_ACCESS_TOKEN"
+      }
     },
     "android": {
+      "package": "com.anonymous.oterra",
       "config": {
         "googleMaps": {
           "apiKey": "AIzaSyAroT3uGDrF7dOmFB-71LQiAfpx9MyyIYU"
@@ -25,7 +31,13 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.anonymous.oterra"
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "gradleProperties": {
+        "MGLMapboxAccessToken": "YOUR_MAPBOX_ACCESS_TOKEN"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -38,9 +50,8 @@
         {
           "calendarPermission": "The app needs to access your calendar."
         }
-      ]
-    ],
-    "sdkVersion": "52.0.0"
+      ],
+      "@react-native-mapbox-gl/maps"
+    ]
   }
 }
-

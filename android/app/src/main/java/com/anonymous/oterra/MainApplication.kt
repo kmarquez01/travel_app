@@ -1,4 +1,4 @@
-package com.anonymous.tvshow_app
+package com.anonymous.oterra
 
 import android.app.Application
 import android.content.res.Configuration

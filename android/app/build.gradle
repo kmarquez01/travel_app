@@ -87,10 +87,10 @@ android {
 
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.anonymous.tvshow_app'
+    namespace 'com.anonymous.oterra'
     defaultConfig {
         minSdk 19
-        applicationId 'com.anonymous.tvshow_app'
+        applicationId 'com.anonymous.oterra'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
